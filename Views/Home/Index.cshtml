@@ -4,4 +4,15 @@
 }
 
 <h2>Index</h2>
+@if (Session["Name"] == "User")
+{
+    <a href="/Home/Logout">Log Out</a><br />
+
+}
+else
+{
+    <a href="/Home/SignIn">SignIn</a><br />
+    <a href="/Home/SignUp">Register</a>
+
+}
 
